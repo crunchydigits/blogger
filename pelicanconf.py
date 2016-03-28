@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import platform
 
 AUTHOR = u'Rob deCarvalho'
-SITENAME = u'Crunchy Digits'
-SITEURL = ''
+SITENAME = u'CrunchyDigits'
+SITEURL = 'http://crunchydigits.github.io'
 
 PATH = 'content'
 
@@ -18,6 +19,11 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+DISPLAY_PAGES_ON_MENU = True
+
+PAGES_ON_MENU = True
+ARCHIVES_ON_MENU = True
+SITE_SUBTEXT = 'Here is some site subtext'
 
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),

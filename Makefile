@@ -7,11 +7,12 @@ clean:
 clean_output:
 	(cd ./output && (git ls-files | xargs git rm >2/dev/null || true) && (git commit -am cleaning 2>/dev/null || true))
 
-blog: clean_output tex 
+blog: tex 
 	pelican content -t ./themes/pelican-alchemy/alchemy
+	#pelican content
 
 
-publish: blog
+publish: clean_output blog
 	(cd ./output && git add . && git commit -am publishing && git push)
 
 
