@@ -1,8 +1,9 @@
-Title: Understanding Entropy I
+Title: Entropy and Information
 Date: 2016-03-20
-Category: Review
+Category: Statistics
 
-This is a really great article to help you gain an intuitive understanding of entropy.
+This post will guide you to an intuitive understanding of entropy and its many
+uses.
 
 [Download PDF]({filename}/pdf/entropy.pdf)
 

@@ -6,13 +6,18 @@
 \usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
 								% TeX will automatically convert eps --> pdf in pdflatex		
 \usepackage{amssymb}
+\usepackage{amsthm}
 
 
-\title{Understanding Entropy}
+\newtheorem{definition}{Definition}
+
+
+\title{Entropy and Information}
 \author{Robert deCarvalho}
 \date{}							% Activate to display a given date or no date
 \begin{document}
 \maketitle
+
 
 \section{Introduction}
 Entropy is one of those words that many people use, but few really understand.
@@ -21,22 +26,28 @@ contexts.  For example, your physics teacher might have told you, ``The entropy
 of the universe is increasing!'' Or perhaps you encountered the word while
 reading about compression. ``This algorithm compressed our file to within
 10\% of the entropy limit.''  Or maybe you vaguely remember entropy as something
-your chemistry teacher told you about and maybe it had something to with
+your chemistry teacher told you about and maybe it had something to do with
 reactions, but you can't quite remember.  Well, hopefully by the end of this
-chapter you will have a decent grasp of what entropy is and why it is useful
-concept.
+chapter you will have a decent grasp of what entropy is and how you can make
+practical use of it.
 
 
-\section{Entropy is information you don't have}
-That's right.  Entropy is the amount of information that you don't have.  Okay,
-but what does that even mean?  Well, apparently, entropy is a kind of
-information.  You probably a good working definition for what information is,
-but would you know how to quantify it?  Would you be able to recognize when you
-have precicely $2.7$ times more information about something than you did
-yesterday?  Let me pose an artificial situation that I think nicely illustrates
-a really useful way to think about quantifying information.
+\section{A Working Definition of Entropy}
+Our quest to understand entropy will start with a simple definition.
+\begin{definition}
+    Entropy is the amount of information you do not know.
+\end{definition}
+That's a pretty short definition, but why would you possibly care about how much
+information you don't know.  Shouldn't you care much more about you do know?
+Also, what does it even mean to talk about an ``amount of informtion?'' You
+probably have an intuitive sense of what ``information'' means, but how is it
+quantified?  How could you tell if you knew presicely $2.73$ times more about a
+topic today than you did yesterday?  As a guide to understanding how information
+can be measured, we will create an imaginary library filled with books and
+investigate how information plays into the way we orgainze our library.
 
-\subsection{The library of information}
+
+\subsection{The Imaginary Library}
 Imagine if you will, that I have a library in which I have collected exactly
 $1000$ books. I have been very careful in selecting the titles that go into my
 collection. I have only included books whos title's begin with the first ten
