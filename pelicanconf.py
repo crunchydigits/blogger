@@ -23,7 +23,7 @@ DISPLAY_PAGES_ON_MENU = True
 
 PAGES_ON_MENU = True
 ARCHIVES_ON_MENU = True
-SITE_SUBTEXT = 'Here is some site subtext'
+SITE_SUBTEXT = 'A work in progress.  Not ready for public consumption'
 
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
