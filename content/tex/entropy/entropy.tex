@@ -39,9 +39,9 @@ Our quest to understand entropy will start with a simple definition.
 \end{definition}
 That's a pretty short definition, but why would you possibly care about how much
 information you don't know.  Shouldn't you care much more about you do know?
-Also, what does it even mean to talk about an ``amount of informtion?'' You
+Also, what does it even mean to talk about an ``amount of information?'' You
 probably have an intuitive sense of what ``information'' means, but how is it
-quantified?  How could you tell if you knew presicely $2.73$ times more about a
+quantified?  How could you tell if you knew precisely $2.73$ times more about a
 topic today than you did yesterday?  As a guide to understanding how information
 can be measured, we turn to a contrived example that will illustrate how
 information can be quantified.
@@ -51,26 +51,54 @@ information can be quantified.
 Imagine you work at a library containing exactly $1000$ books.  Instead of the
 Dewey Decimal System, the books have been given sequential labels from $000$ to
 $999$.  The books are arranged onto $100$ shelves each holding $10$ books and
-labeled with  two digits corresponding the the first two digits of all the books
+labeled with  two digits corresponding the first two digits of all the books
 it contains.  When patrons enter the library, they present you with slips of
 paper containing the three-digit number of the book they'd like to check out.
 It is your job to retrieve the correct book from the shelves.
 
-In this scenario, what information do the three digits on that slip of paper
-provide you?  By looking at the first two digits on the slip of paper, you can
-navigate directly to the shelve containing the relevant book.  Looking at that
-last digit tells you how far along the shelf the book lies, and you can locate
-it perfectly on the first try.  Because of the way the libary has been
-orgainized, those three digits are all you need to know to locate the book.
+A patron arrives and hands you a slip of paper with the number $248$. Let's
+pause and consider the information you have at your disposal to retrieve the
+desired book.  You know that every book in the library has been labeled with a
+number, and that the books are ordered sequentially onto appropriately labeled
+shelves.  By looking at the first two digits on the patron's slip of paper, you
+can navigate directly to shelf $24$.  By looking at the last digit, $8$, you
+know immediately that you want the second to last book on that shelf.  Because
+of the way the library has been organized, you can walk directly to the desired
+book and retrieve it on the first try.  You have perfect information on where
+the book will be, and there is no missing information to impede your search.
 
+Now consider a modified scenario in which you arrive at the library early in the
+morning only to discover that a prankster has come in overnight and covered all
+the books with identical dust jackets.  There is no way to distinguish between
+the books because they all look the same.  To further complicate your life, the
+little miscreant has gone through each shelf and scrambled the order of the
+books.  Fortunately, he was kind enough to ensure that each book remained on the
+appropriate shelf, but its location on that shelf is now a complete mystery.
+Now your first patron of the day arrives bearing a ticket with the number $369$.
+What information do you have now to aid your search for the book.  Because of
+the prank all you can now say is that the book is on shelf $36$, but you don't
+know where on the shelf it is.  In order to actually find the book, you will
+need to remove the dust cover each of each book on shelf $36$ until you locate
+book $369$.  You know longer have perfect information for locating the book.
+You're going to have to make at least one guess, and you may need to make up to
+ten guesses in order to retrieve it.  There is now missing information -- you
+don't know how the books on shelf $36$ are arranged.
 
-Now consider a modified scenario where someone has come in and covered all the
-books with identical dust jackets.  Now there is no way to distinguish between
-the books because they all look the same.  Furthermore, their three-digit call
-numbers are now obscured.  This has placed you in quite a quandry, because this
-same prankster has gone to each shelf and scrambled the order of the books.
-Fortunately, no books have moved shelves, but they are completely out of order
-within that shelf.
+Now imagine a third scenario in which the prankster has abandoned all civility
+and has completely shuffled all the books in the entire library, moving books
+from shelf to shelf in a completely random way.  I this scenario, when a patron
+hands you a ticket, the only thing you have is that the book is somewhere
+in the library, but you have no idea where.  You have no information to help you
+locate it, so your only option is to remove the dust cover on each book, one by
+one, until you find the desired book.
+
+Furthermore, their
+three-digit call numbers are now obscured.  As you search for the 
+
+This has placed you in quite a
+predicament, because this same prankster has gone to each shelf and scrambled the
+order of the books.  Fortunately, no books have moved shelves, but they are
+completely out of order within that shelf.
 
 
 
@@ -85,14 +113,5 @@ labeling the spine of the books
 
 
 
-which has have a library in which I have collected exactly
-$1000$ books. I have been very careful in selecting the titles that go into my
-collection. I have only included books whos title's begin with the first ten
-letters of the alphabet, A-J. As a matter of fact, there are exactly $100$ books
-that begin with A, $100$ books that begin with B, and so on all the way through
-the letter J.  I now have $1000$ books equally distributed among my $10$ bins.
-
-MAYBE INSTEAD OF USING ALPHABETIZED BOOKS, USE CALL NUMBERS BECAUSE THIS
-WILL MORE CLOSELY TIE INTO ENTROPY
 
 \end{document}  
