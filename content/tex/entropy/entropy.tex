@@ -31,6 +31,18 @@ reactions, but you can't quite remember.  Well, hopefully by the end of this
 chapter you will have a decent grasp of what entropy is and how you can make
 practical use of it.
 
+\section{Why Should You Care About Entropy}
+Before we get into what entropy is, let's talk a bit about why we even need such
+a concept, and how it is useful.
+\begin{enumerate}
+    \item Working with probability, want to be honest about minimizing what you
+        know.
+    \item Can measure population diversity.
+    \item Help you reason effectively in the face of uncertainty.  Take into
+        account what you know, but make sure you are honest about what you don't
+        know.
+\end{enumerate}
+
 
 \section{A Working Definition of Entropy}
 Our quest to understand entropy will start with a simple definition.
@@ -100,13 +112,13 @@ you were to write down the call number of each book in the library on a piece of
 paper, you would end up writing $3\times1,000=3,000$ digits.  It turns out that
 the number of digits you need to write down to catalog each book is an excellent
 way to measure information.  So, for example, if had $10,000$ books in your
-library, you would end up needing $4\times10,000=40,000$ digits to account for
-all the books. This means that a sequentially organized library of $10,000$
-books contains $40,000$ digits of information.  Note that the information I'm
-talking about here has to do with the location of the books and that's all.  If
-we were talking about any other property of the books other than their labels
-and locations in the library, then we would have to increase the scope of what
-we mean by the word ``information''.
+library instead of $1,000$, you would end up needing $4\times10,000=40,000$
+digits to account for all the books. This means that a sequentially organized
+library of $10,000$ books contains $40,000$ digits of information.  Note that
+the information I'm talking about here has to do with the location of the books
+and that's all.  If we were talking about any other property of the books other
+than their labels and locations in the library, then we would have to increase
+the scope of what we mean by the word ``information''.
 
 Let's now think about each of the scenarios and determine how many digits of
 information you know in each of them.
