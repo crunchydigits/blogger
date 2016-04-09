@@ -62,16 +62,17 @@ quantified.
 \subsection{The Library of Information}
 Imagine you work at a library containing exactly $1,000$ books.  Instead of the
 Dewey Decimal System, the books have been given sequential labels from $000$ to
-$999$.  The books are arranged onto $100$ shelves each holding $10$ books and
-labeled with two digits corresponding the first two digits of all the books
-it contains.  When patrons enter the library, they present you with slips of
-paper containing the three-digit number of the book they'd like to check out.
+$999$.  The books are arranged onto $100$ shelves holding $10$ books each and
+labeled with two digits corresponding the first two digits of all the books it
+contains.  So, for example, books $320$ through $329$ are arranged in order on a
+shelf labeled $32$.  When patrons enter the library, they present you with slips
+of paper containing the three-digit number of the book they'd like to check out.
 It is your job to retrieve the correct book from the shelves.
 
-A patron arrives and hands you a slip of paper with the number $248$. Let's
-pause and consider the information you have at your disposal to retrieve the
-desired book.  You know that every book in the library has been labeled with a
-number, and that the books are ordered sequentially onto appropriately labeled
+One day a patron arrives and hands you a slip of paper with the number $248$.
+Let's pause and consider the information you have at your disposal to retrieve
+the desired book.  You know that every book in the library has been labeled with
+a number, and that the books are ordered sequentially onto appropriately labeled
 shelves.  By looking at the first two digits on the patron's slip of paper, you
 can navigate directly to shelf $24$.  By looking at the last digit, $8$, you
 know immediately that you want the second to last book on that shelf.  Because
@@ -84,25 +85,26 @@ morning only to discover that a prankster has come in overnight and covered all
 the books with identical dust jackets.  There is no way to distinguish between
 the books because they all look the same.  To further complicate your life, the
 miscreant has gone through each shelf and scrambled the order of the books.
-Fortunately, he was kind enough to ensure that each book remained on the
-appropriate shelf, but its location on that shelf is now a complete mystery.
-Now your first patron of the day arrives bearing a ticket with the number $369$.
-What information do you have now to aid your search for the book.  Because of
-the prank, all you know is that the book is on shelf $36$, but you don't
-know where on that shelf it is.  In order to actually find the book, you will
-need to remove the dust cover each of each book until you locate
-book $369$.  You no longer have perfect information for locating the book.
-You're going to have to make at least one guess, and you may need to make up to
-ten guesses in order to retrieve it.  There is now missing information -- you
-don't know how the books on shelf $36$ are arranged.
+Fortunately, he was considerate enough to ensure that each book remained on the
+appropriate shelf, but its location on that shelf is now a completely unknown.
 
-Now imagine a third scenario in which the prankster has abandoned all civility
-and has completely shuffled all the books in the entire library, moving books
-from shelf to shelf in a completely random way.  In this scenario, when a patron
-hands you a ticket, the only thing you know is that the book is somewhere in the
-library, but you have no idea where.  You have no information to help you in
-your search, so your only option is to one by one remove the dust cover on each
-book until you find the what you're looking for.
+Your first patron of the day arrives bearing a ticket with the number $369$.
+What information do you have now to aid your search for the book.  Because of
+the prank, all you know is that the book is on shelf $36$, but you don't know
+where on that shelf it is.  In order to actually find the book, you will need to
+remove the dust cover each of each book until you locate book $369$.  You no
+longer have perfect information for locating the book.  You're going to have to
+make at least one guess, and you may need to make up to ten guesses in order to
+retrieve it.  There is now missing information -- you don't know how the books
+on shelf $36$ are arranged.
+
+Finally, imagine a third scenario in which the prankster has abandoned all
+civility and has completely shuffled all the books in the entire library, moving
+books from shelf to shelf in a completely random way.  In this scenario, when a
+patron hands you a ticket, the only thing you know is that the book is somewhere
+in the library, but you have no idea where.  You have no information to help you
+in your search, so your only option is to one by one remove the dust cover on
+each book until you find the what you're looking for.
 
 In each of these three scenarios, you have a different amount of information
 available to aid in locating a specific book.  Let's lay the groundwork for
